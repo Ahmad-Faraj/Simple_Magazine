@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: #ffffff;
+}
+
+.grid {
+    margin: 100px auto;
+    border-radius: 2%;
+    display: grid;
+    background-color: #eee;
+    padding: 20px;
+    width: 1200px;
+    height: 1800px;
+    gap : 10px;
+    grid-template: repeat(3,1fr) 0.75fr / repeat(4,1fr);
+    grid-template-areas:"a a b c"
+                        "d e e c"
+                        "d f f c"
+                        "g h i j";
+    position: relative;
+    
+}
+
+.grid div{
+    position: relative;
+}
+
+.grid .a{
+    grid-area: a;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .b{
+    grid-area: b;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .c{
+    grid-area: c;
+    background-color: black;
+    color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .d{
+    grid-area: d;
+    background-color: black;
+    color: black;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .e{
+    grid-area: e;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .f{
+    grid-area: f;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .g{
+    grid-area: g;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .h{
+    grid-area: h;
+    background-color: black;
+    color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .i{
+    grid-area: i;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+.grid .j{
+    grid-area: j;
+    background-color: white;
+    border-bottom: 3px rgb(0, 255, 255) solid;
+}
+
+.grid .a h1 , .grid .b h1 , .grid .e h1 , .grid .f h1 ,.grid .g h1 , .grid .i h1 , .grid .j h1
+{
+    font-size: 70px;
+    padding-left: 10px;
+}
+
+.grid .c h1 , .grid .d h1 , .grid .h h1
+{
+    color: white;
+    font-size: 70px;
+    padding-left: 10px;
+}
+
+.grid .c p , .grid .d p , .grid .h p
+{
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.grid div .job
+{
+    font-size: 40px;
+    color: rgb(180, 180, 180);
+    padding-left: 10px;
+}
+
+.grid div p
+{
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+}
+.grid div::before
+{
+    color: gray;
+    content: ",,";
+    position: absolute;
+    right: 15px;
+    bottom:15px;
+    font-size: 40px;
+}
+

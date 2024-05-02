@@ -1,2 +1,2 @@
 # Simple_Magazine
-Simple Magazine with CSS Grid
+Simple Magazine with CSS Grid.
